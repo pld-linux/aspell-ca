@@ -5,6 +5,7 @@ Name:		aspell-ca
 Version:	0.0
 %define	subv	3
 Release:	1
+Epoch:		1
 License:	unknown (probably GPL)
 Group:		Applications/Text
 Source0:	http://aspell.sourceforge.net/%{name}-%{version}-%{subv}.tar.bz2
