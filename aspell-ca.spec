@@ -4,9 +4,9 @@ Summary(pl):	Kataloñski s³ownik dla aspella
 Name:		aspell-ca
 Version:	0.0
 %define	subv	3
-Release:	1
+Release:	2
 Epoch:		1
-License:	unknown (probably GPL)
+License:	GPL (?)
 Group:		Applications/Text
 Source0:	http://aspell.sourceforge.net/%{name}-%{version}-%{subv}.tar.bz2
 URL:		http://aspell.sourceforge.net/
