@@ -4,7 +4,7 @@ Summary(pl):	S³ownik kataloñski dla aspella
 Name:		aspell-ca
 Version:	0.50
 %define	subv	2
-Release:	3
+Release:	4
 Epoch:		1
 License:	GPL (?)
 Group:		Applications/Text
