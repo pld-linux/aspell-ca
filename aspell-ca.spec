@@ -2,17 +2,17 @@ Summary:	Catalan dictionary for aspell
 Summary(ca):	Diccionari catalø per aspell
 Summary(pl):	Kataloñski s³ownik dla aspella
 Name:		aspell-ca
-Version:	0.50
-%define	subv	2
-Release:	3
+Version:	20040130
+%define	subv	1
+Release:	1
 Epoch:		1
-License:	GPL (?)
+License:	GPL v2+
 Group:		Applications/Text
-Source0:	ftp://ftp.gnu.org/gnu/aspell/dict/ca/%{name}-%{version}-%{subv}.tar.bz2
-# Source0-md5:	c593ae266d3e48e4d482ff9b9a52acdd
+Source0:	ftp://ftp.gnu.org/gnu/aspell/dict/ca/aspell6-ca-%{version}-%{subv}.tar.bz2
+# Source0-md5:	5dfeebdfbe68556e70abfa95dd775263
 URL:		http://aspell.sourceforge.net/
-BuildRequires:	aspell >= 0.50.0
-Requires:	aspell >= 0.50.0
+BuildRequires:	aspell >= 0.60
+Requires:	aspell >= 0.60
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -25,7 +25,9 @@ Diccionari catalø per aspell.
 Kataloñski s³ownik (lista s³ów) dla aspella.
 
 %prep
-%setup -q -n %{name}-%{version}-%{subv}
+%setup -q -n aspell6-ca-%{version}-%{subv}
+
+mv -f doc/index.{php,html}
 
 %build
 # note: configure is not autoconf-generated
@@ -44,7 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README Copyright
-%lang(ca) %doc doc/LLEGEIX
+%doc Copyright README
+%lang(ca) %doc doc/index.*
 %{_libdir}/aspell/*
 %{_datadir}/aspell/*
