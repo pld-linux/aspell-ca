@@ -1,6 +1,6 @@
 Summary:	Catalan dictionary for aspell
-Summary(ca):	Diccionari catal‡ per aspell
-Summary(pl):	KataloÒski s≥ownik dla aspella
+Summary(ca.UTF-8):   Diccionari catal√† per aspell
+Summary(pl.UTF-8):   Katalo≈Ñski s≈Çownik dla aspella
 Name:		aspell-ca
 Version:	20040130
 %define	subv	1
@@ -18,11 +18,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Catalan dictionary (i.e. word list) for aspell.
 
-%description -l ca
-Diccionari catal‡ (lista de paraules) per aspell.
+%description -l ca.UTF-8
+Diccionari catal√† (lista de paraules) per aspell.
 
-%description -l pl
-KataloÒski s≥ownik (lista s≥Ûw) dla aspella.
+%description -l pl.UTF-8
+Katalo≈Ñski s≈Çownik (lista s≈Ç√≥w) dla aspella.
 
 %prep
 %setup -q -n aspell6-ca-%{version}-%{subv}
