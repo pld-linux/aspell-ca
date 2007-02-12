@@ -1,6 +1,6 @@
 Summary:	Catalan dictionary for aspell
-Summary(ca.UTF-8):   Diccionari català per aspell
-Summary(pl.UTF-8):   Kataloński słownik dla aspella
+Summary(ca.UTF-8):	Diccionari català per aspell
+Summary(pl.UTF-8):	Kataloński słownik dla aspella
 Name:		aspell-ca
 Version:	20040130
 %define	subv	1
