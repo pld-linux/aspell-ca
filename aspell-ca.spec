@@ -2,14 +2,14 @@ Summary:	Catalan dictionary for aspell
 Summary(ca.UTF-8):	Diccionari català per aspell
 Summary(pl.UTF-8):	Kataloński słownik dla aspella
 Name:		aspell-ca
-Version:	20040130
+Version:	2.1.5
 %define	subv	1
 Release:	1
-Epoch:		1
+Epoch:		2
 License:	GPL v2+
 Group:		Applications/Text
 Source0:	http://ftp.gnu.org/gnu/aspell/dict/ca/aspell6-ca-%{version}-%{subv}.tar.bz2
-# Source0-md5:	5dfeebdfbe68556e70abfa95dd775263
+# Source0-md5:	153d26f724866909c6faf49eecefe8b3
 URL:		http://aspell.sourceforge.net/
 BuildRequires:	aspell >= 3:0.60
 Requires:	aspell >= 3:0.60
@@ -26,8 +26,6 @@ Kataloński słownik (lista słów) dla aspella.
 
 %prep
 %setup -q -n aspell6-ca-%{version}-%{subv}
-
-mv -f doc/index.{php,html}
 
 %build
 # note: configure is not autoconf-generated
@@ -46,7 +44,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Copyright README
-%lang(ca) %doc doc/index.*
-%{_libdir}/aspell/*
-%{_datadir}/aspell/*
+%doc Copyright README doc/ChangeLog
+%{_libdir}/aspell/ca-*.*
+%{_libdir}/aspell/ca.alias
+%{_libdir}/aspell/catalan.alias
+%{_libdir}/aspell/catalan-general.alias
+%{_libdir}/aspell/catalan-valencia.alias
+%{_datadir}/aspell/ca.dat
+%{_datadir}/aspell/ca_affix.dat
