@@ -14,6 +14,7 @@ URL:		http://aspell.sourceforge.net/
 BuildRequires:	aspell >= 3:0.60
 BuildRequires:	which
 Requires:	aspell >= 3:0.60
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -46,10 +47,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Copyright README doc/ChangeLog
-%{_libdir}/aspell/ca-*.*
-%{_libdir}/aspell/ca.alias
-%{_libdir}/aspell/catalan.alias
-%{_libdir}/aspell/catalan-general.alias
-%{_libdir}/aspell/catalan-valencia.alias
+%{_prefix}/lib/aspell/ca-*.*
+%{_prefix}/lib/aspell/ca.alias
+%{_prefix}/lib/aspell/catalan.alias
+%{_prefix}/lib/aspell/catalan-general.alias
+%{_prefix}/lib/aspell/catalan-valencia.alias
 %{_datadir}/aspell/ca.dat
 %{_datadir}/aspell/ca_affix.dat
