@@ -4,7 +4,7 @@ Summary(pl.UTF-8):	Kataloński słownik dla aspella
 Name:		aspell-ca
 Version:	2.1.5
 %define	subv	1
-Release:	2
+Release:	3
 Epoch:		2
 License:	GPL v2+
 Group:		Applications/Text
